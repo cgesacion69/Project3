@@ -18,5 +18,25 @@ class Main {
     System.out.println(x[12]);
     System.out.println(x[13]);
     System.out.println(x[14]);
+    String[] strArray = { "A", "B", "C" , "D" , "E" , "F" , "G" , "H" , "I" , "J" , "K" , "L" , "M" , "N" , "O"};
+		boolean found = false;
+		int index = 0;
+		String s = "B";
+		for (int i = 0; i < strArray.length; i++) {
+			if(s.equals(strArray[i])) {
+				index = i; found = true; break;
+			}
+		}
+		if(found)
+			System.out.println(s +" found at index "+index);
+		else
+			System.out.println(s +" not found in the array");
+
+      System.out.println("what is your name");
+      System.out.println("my name is cameron");
+
+		
+	}
+
+
   }
-} 
